@@ -1,8 +1,11 @@
-@import url(_base.scss);
+@import "base";
+@import "typography";
 
 body {
   background-color: rgb(0, 0, 0);
   color: whitesmoke;
+  font-size: $base-font-size;
+  font-family: $font-body;
 }
 
 nav {
@@ -13,4 +16,8 @@ nav {
     text-decoration: none;
     color: #fff;
   }
+}
+
+h1 {
+  font-family: $font-display;
 }
