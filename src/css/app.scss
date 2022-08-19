@@ -1,6 +1,8 @@
 @import "base";
 @import "typography";
 
+// spacing
+
 body {
   background-color: rgb(0, 0, 0);
   color: whitesmoke;
@@ -8,16 +10,35 @@ body {
   font-family: $font-body;
 }
 
+.container {
+  padding: 0 4rem;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
 
   a {
     text-decoration: none;
+    font-size: $font-md;
     color: #fff;
+    margin-left: 8px;
+    transition: color ease-in 0.5s;
+
+    &:hover {
+      color: rgb(115, 169, 251);
+    }
   }
 }
 
 h1 {
   font-family: $font-display;
+  font-size: $font-lg;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
 }
