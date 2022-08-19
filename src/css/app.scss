@@ -38,12 +38,36 @@ h1 {
   font-size: $font-lg;
 }
 
-.hero--card {
+.hero__card {
   background-color: #3333337a;
+  border-radius: 16px;
   text-align: center;
   padding: 2rem 4rem;
-  width: 400px;
+  width: 700px;
   margin: 4rem auto;
+
+  h2 {
+    font-size: $font-lg;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #929292;
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+  }
+
+  a {
+    background-color: #ff0;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    // margin: 1.5rem 0;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-weight: 700;
+    display: inline-block;
+  }
 }
 
 footer {
