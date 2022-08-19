@@ -70,7 +70,34 @@ h1 {
   }
 }
 
+.highlights {
+  text-align: center;
+
+  h2 {
+    color: darkgray;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: $font-md;
+    margin: 8rem 0 2rem;
+  }
+
+  .highlights__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+
+    .highlights__img {
+      background-image: url(https://via.placeholder.com/350);
+      width: 350px;
+      height: 350px;
+    }
+  }
+}
+
 footer {
   display: flex;
   justify-content: space-between;
+  margin: 24rem 0 4rem;
 }
