@@ -14,6 +14,10 @@ body {
   padding: 0 4rem;
 }
 
+.hide {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -23,13 +27,27 @@ nav {
   a {
     text-decoration: none;
     font-size: $font-md;
-    color: #fff;
+    color: #eee;
     margin-left: 8px;
     transition: color ease-in 0.5s;
 
     &:hover {
       color: rgb(115, 169, 251);
     }
+  }
+}
+
+.navMobile {
+  padding: 4rem 6rem;
+  background-color: #fff;
+  text-align: right;
+
+  a {
+    text-decoration: none;
+    font-size: $font-md;
+    color: #000;
+    margin-left: 8px;
+    transition: color ease-in 0.5s;
   }
 }
 
