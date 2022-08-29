@@ -115,9 +115,21 @@ h1 {
     gap: 1rem;
 
     .highlights__img {
-      background-image: url(https://via.placeholder.com/350);
+      // background-image: url(https://via.placeholder.com/350);
       width: 350px;
       height: 350px;
+    }
+
+    .highlights__img-tahoe {
+      background: url("/img/2.jpeg") center center;
+    }
+
+    .highlights__img-tokyo {
+      background: url("/img/tokyo.jpg") center center;
+    }
+
+    .highlights__img-hawaii {
+      background: url("/img/miami.jpg") center center;
     }
   }
 }
