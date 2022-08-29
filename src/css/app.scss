@@ -56,13 +56,21 @@ h1 {
   font-size: $font-lg;
 }
 
+.hero {
+  background: url("/img/ocean.jpg") no-repeat center center;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero__card {
   background-color: #3333337a;
   border-radius: 16px;
   text-align: center;
   padding: 2rem 4rem;
   width: 700px;
-  margin: 4rem auto;
+  margin: 0 auto;
 
   h2 {
     font-size: $font-lg;
