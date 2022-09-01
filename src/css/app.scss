@@ -37,6 +37,14 @@ nav {
   }
 }
 
+#menu {
+  color: #000;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .navMobile {
   padding: 4rem 6rem;
   background-color: #fff;
