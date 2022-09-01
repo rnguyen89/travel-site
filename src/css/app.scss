@@ -73,12 +73,12 @@ h1 {
 }
 
 .hero__card {
-  background-color: #3333337a;
+  background-color: rgba(51, 51, 51, 0.4784313725);
   border-radius: 16px;
   text-align: center;
-  padding: 2rem 4rem;
+  padding: 8% 16%;
   width: 700px;
-  margin: 0 auto;
+  margin: 16% auto;
 
   h2 {
     font-size: $font-lg;
