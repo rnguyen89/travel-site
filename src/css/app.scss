@@ -18,13 +18,18 @@ body {
   display: none;
 }
 
+h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
 
-  a {
+  div > a {
     text-decoration: none;
     font-size: $font-md;
     color: #eee;
@@ -158,3 +163,5 @@ footer {
   justify-content: space-between;
   margin: 24rem 0 4rem;
 }
+
+// destinations
