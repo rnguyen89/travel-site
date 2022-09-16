@@ -14,6 +14,7 @@ body {
   opacity: 0;
   transition: all ease-in 0.8s;
   transform: translateX(-100%);
+  // transform: translate(0, 240px);
 }
 
 @media (prefers-reduced-motion) {
@@ -25,6 +26,12 @@ body {
 .show {
   opacity: 1;
   transform: translateX(0);
+  // transform: translate(0, 240px);
+}
+
+.hide {
+  display: none !important;
+  // transform: translateX(-100%);
 }
 
 .highlights__card:nth-child(1) {
@@ -41,10 +48,6 @@ body {
 
 .container {
   padding: 0 4rem;
-}
-
-.hide {
-  display: none;
 }
 
 h1 a {
@@ -80,17 +83,45 @@ nav {
 }
 
 .navMobile {
-  padding: 4rem 6rem;
+  padding: 1rem 6rem;
   background-color: #fff;
   text-align: right;
+  transition: all ease-in 0.5s;
 
   a {
     text-decoration: none;
     font-size: $font-md;
     color: #000;
     margin-left: 8px;
-    transition: color ease-in 0.5s;
+    margin-bottom: 25px;
+    transition: all ease-in 0.5s;
+
+    &:hover {
+      color: rgb(115, 169, 251);
+    }
   }
+}
+
+.logoMobile {
+  color: #000;
+}
+
+.navMobile > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navMobile > div:first-child p {
+  margin-bottom: 0;
+}
+
+.navMobileLinks {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // transform: translateX(-100%);
 }
 
 h1 {
@@ -194,3 +225,38 @@ footer {
 }
 
 // destinations
+#box {
+  background-color: rgba(40, 40, 190, 1);
+  border: 4px solid rgb(20, 20, 120);
+  transition: background-color 1s, border 1s;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.vertical {
+  color: white;
+  font: 32px "Arial";
+}
+
+.extra {
+  width: 350px;
+  height: 350px;
+  margin-top: 10px;
+  border: 4px solid rgb(20, 20, 120);
+  text-align: center;
+  padding: 20px;
+}
+
+.space {
+  min-height: 100vh;
+}
+
+.bigBox {
+  height: 400px;
+  width: 400px;
+  background-color: #ff0;
+}
