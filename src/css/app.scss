@@ -1,8 +1,20 @@
 @import "base";
 @import "typography";
+@import "50layout";
+
+@mixin btn-style {
+  background-color: #ff0;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  // margin: 1.5rem 0;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-weight: 700;
+  display: inline-block;
+}
 
 // spacing
-
 body {
   background-color: rgb(0, 0, 0);
   color: whitesmoke;
@@ -157,15 +169,7 @@ h1 {
   }
 
   a {
-    background-color: #ff0;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    // margin: 1.5rem 0;
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    font-weight: 700;
-    display: inline-block;
+    @include btn-style();
   }
 }
 
@@ -259,4 +263,37 @@ footer {
   height: 400px;
   width: 400px;
   background-color: #ff0;
+}
+
+// This will be the feature section
+
+.feature {
+  margin-top: 8%;
+}
+
+.feature__img-tahoe {
+  background: url("/img/2.jpeg") center center;
+  background-size: cover;
+  min-height: 40vh;
+}
+
+.feature__card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: auto;
+  align-items: center;
+}
+
+.feature__content {
+  padding: 6%;
+
+  h2,
+  p {
+    line-height: 1.5;
+    margin-bottom: 2%;
+  }
+
+  a {
+    @include btn-style();
+  }
 }
