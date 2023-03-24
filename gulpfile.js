@@ -9,7 +9,7 @@ const sourcemaps = require("gulp-sourcemaps");
 
 const browserSync = require("browser-sync").create();
 
-sass.complier = require(`node-sass`);
+// sass.complier = require(`node-sass`);
 
 function runSass() {
   // place code for your default task here
